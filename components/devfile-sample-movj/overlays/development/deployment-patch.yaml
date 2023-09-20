@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-movj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0095-tenant/ci10t-777-0095-app/devfile-sample-movj@sha256:5400c5e9fa056cbd186aef893d1f3bb3bd1bd7155f2210ca0f855e97d81044da
+        name: my-nodejs
+        resources: {}
+status: {}
